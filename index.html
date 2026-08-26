@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bitcoin Halving Countdown</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <p class="eyebrow">Bitcoin · Block 1,050,000</p>
+    <h1>Next Halving Countdown</h1>
+    <p class="subtitle">Block reward drops from 3.125 BTC to 1.5625 BTC</p>
+
+    <section class="countdown" id="countdown">
+      <div><span id="days">--</span><small>Days</small></div>
+      <div><span id="hours">--</span><small>Hours</small></div>
+      <div><span id="minutes">--</span><small>Minutes</small></div>
+      <div><span id="seconds">--</span><small>Seconds</small></div>
+    </section>
+
+    <p class="eta" id="eta">Estimating from live block height…</p>
+
+    <section class="stats">
+      <div>
+        <strong id="current-block">—</strong>
+        <span>Current block</span>
+      </div>
+      <div>
+        <strong id="blocks-left">—</strong>
+        <span>Blocks remaining</span>
+      </div>
+      <div>
+        <strong>3.125 → 1.5625</strong>
+        <span>BTC reward</span>
+      </div>
+    </section>
+
+    <p class="note">
+      Halving is triggered by block height, not a fixed date.
+      This countdown assumes ~10 minutes per block.
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
